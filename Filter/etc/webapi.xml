@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../app/code/Magento/Webapi/etc/webapi.xsd">
+    <route url="/V1/mobile/filter/:categoryId/filters" method="GET">
+        <service class="Riyas\Filter\Api\FilterInterface" method="getActiveFilters"/>
+        <resources>
+            <resource ref="Riyas_Filter::getActiveFilters"/>
+        </resources>
+    </route>
+</routes>
